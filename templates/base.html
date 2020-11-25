@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{#{% load staticfiles %}#}
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachi Craige List</title>
+{#    <link rel="stylesheet" href=""/>#}
+</head>
+<body>
+
+<nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Kachi list</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1 style="text-align: center">What do you want to search for on Kachi list?</h1>
+    <div class="row">
+
+        <div class="col s4">
+            <!-- Promo content goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E75">flash_on</i>
+                <p>Lightening Fast craig list web scraper</p>
+                <p class="light center">Scrap away here with a beautiful GUI</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <!-- Promo content goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: orange">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">Builtin functionality to filter based on pricing</p>
+            </div>
+        </div>
+
+         <div class="col s4">
+            <!-- Promo content goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p>A much real front end to Craigslist</p>
+                <p class="light center">We built this with love</p>
+            </div>
+        </div>
+
+        {% block content %}
+        
+        {% endblock %}
+
+    </div>
+</div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
