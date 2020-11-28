@@ -1,0 +1,1 @@
+web: gunicorn crasiglist_app.wsgi
