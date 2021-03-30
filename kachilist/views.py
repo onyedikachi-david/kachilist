@@ -6,6 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # Create your views here.
+# https://newyork.craigslist.org/d/services/search/?query={}
+
 BASE_URL_CRAIGELIST = 'https://newyork.craigslist.org/d/services/search/?query={}'
 BASE_IMAGE_URL = 'http://images.craigelist.org/_{}_300x300.jpg'
 
